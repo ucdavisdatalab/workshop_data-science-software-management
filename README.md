@@ -56,31 +56,25 @@ repo:
 7. `git add` all changed files, then `git commit` and `git push`.
 
 
-# Workshop: Introduction to the Unix Command Line
+# Workshop: Managing Code and Software for Applied Data Science Projects
 
 _[UC Davis DataLab](https://datalab.ucdavis.edu/)_  
-_Fall 2021_  
-_Instructor: Tyler Shoemaker <<tshoemaker@ucdavis.edu>>_  
+_Winter 2022_  
+_Instructor: Pamela Reynolds <<plreynolds@ucdavis.edu>>_  
 
-* [Reader](https://ucdavisdatalab.github.io/workshop_introduction_to_the_command_line/)
-* [Event Page](https://datalab.ucdavis.edu/eventscalendar/introduction-to-the-unix-command-line/)
+* [Reader](https://ucdavisdatalab.github.io/workshop_data-science-software-management/)
+* [Event Page](https://datalab.ucdavis.edu/eventscalendar/code-management-workshop/)
 
-Learn and practice how to talk directly to your computer via the command line. 
-The Unix shell is a powerful tool for using scientific software, working with 
-large datasets, and controlling remote servers. It is primarily used to manage 
-files and run programs, and it allows for automation of repetitive tasks. This 
-workshop is a prerequisite for many of DataLab's workshops, including 
-Introduction to Version Control with Git, Reproducible Research for Teams with 
-GitHub, and the Remote Computing series.
+Creating a repeatable process for developing your software is an important component of reproducible research. This workshop discusses how and why we build code, possible development workflows, project management strategies, and tool selection. This workshop is designed for learners who are writing and applying code for their research projects, but have no or limited formal computer science training. After this workshop, learners should be able to describe the basic process of developing code, compare the benefits of different tools and coding workflows based on project goals and constraints, and identify appropriate strategies for managing and archiving project artifacts (including code and data). There are no specific prerequisites for this lecture/discussion-focused workshop, but it is designed for learners with prior coding experience.
 
 ## Assessment
 
-To earn a micro-badge for this workshop, view or download a) this assignment sheet: 
+Participation in this workshop and completion of accompanying assessment activity can contribute to the UC Davis GradPathways 'Reproducible Research' track for enrolled graduate students and postdoctoral scholars. To earn a micro-badge for this workshop, view or download a) this assignment sheet: 
 [assessment][assessment]; and b) [this][] `.zip` folder. Follow the instructions 
 in the assignment sheet.
 
-[assessment]: https://github.com/ucdavisdatalab/workshop_introduction_to_the_command_line/blob/main/unix_command_line_assignment_instructions.pdf
-[this]: https://github.com/ucdavisdatalab/workshop_introduction_to_the_command_line/blob/main/command_line_assignment.zip
+[assessment]: 
+[this]: 
 
 ## Contributing
 
