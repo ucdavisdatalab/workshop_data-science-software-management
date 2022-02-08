@@ -48,7 +48,7 @@ repo:
    tags.
 
 5. GitHub: In the repo's Settings page, enable GitHub pages. Set the branch to
-   `master` and the directory to `docs/`.
+   `main` and the directory to `docs/`.
 
 6. `README.md`: Remove these template instructions, which end at the `#
    Workshop:` header below
