@@ -48,7 +48,7 @@ repo:
    tags.
 
 5. GitHub: In the repo's Settings page, enable GitHub pages. Set the branch to
-   `main` and the directory to `docs/`.
+   `master` and the directory to `docs/`.
 
 6. `README.md`: Remove these template instructions, which end at the `#
    Workshop:` header below
@@ -67,14 +67,6 @@ _Instructor: Pamela Reynolds <<plreynolds@ucdavis.edu>>_
 
 Creating a repeatable process for developing your software is an important component of reproducible research. This workshop discusses how and why we build code, possible development workflows, project management strategies, and tool selection. This workshop is designed for learners who are writing and applying code for their research projects, but have no or limited formal computer science training. After this workshop, learners should be able to describe the basic process of developing code, compare the benefits of different tools and coding workflows based on project goals and constraints, and identify appropriate strategies for managing and archiving project artifacts (including code and data). There are no specific prerequisites for this lecture/discussion-focused workshop, but it is designed for learners with prior coding experience.
 
-## Assessment
-
-Participation in this workshop and completion of accompanying assessment activity can contribute to the UC Davis GradPathways 'Reproducible Research' track for enrolled graduate students and postdoctoral scholars. To earn a micro-badge for this workshop, view or download a) this assignment sheet: 
-[assessment][assessment]; and b) [this][] `.zip` folder. Follow the instructions 
-in the assignment sheet.
-
-[assessment]: 
-[this]: 
 
 ## Contributing
 
@@ -114,7 +106,9 @@ To make alterations to the reader:
     - `docs/` (all of it)
     - `_bookdown_files/` (contains the **knitr** cache)
     * `renv.lock` (contains the **renv** package list)
+<!--
     - `.gitattributes` (contains the Git LFS file list)
+-->
 
     Then `git commit` and `git push`. The live web page will update
     automatically after 1-10 minutes.
@@ -142,6 +136,7 @@ use external libraries. Because of this, it's best to leave caching off for
 code chunks that are not resource-intensive.
 
 
+<!--
 ### Large Files
 
 If you want to include a large file (say over 1 MB), you should use git LFS.
@@ -165,11 +160,21 @@ automatically intercede as needed.
 GitHub provides 1 GB of storage and 1 GB of monthly bandwidth free per repo for
 large files. If your large file is more than 50 MB, check with the other
 contributors before adding it.
+-->
 
+### Github Actions
+
+GitHub Actions can be set up to automatically render your reader when you push 
+new content to a repo. If you would like to use this function, download the 
+materials in [datalab-dev/utilities/render_bookdown_site][render-site] and 
+follow the instructions there.
+
+[render-site]: https://github.com/datalab-dev/utilities/tree/main/render_bookdown_site
 
 ## Setup
 
 
+<!--
 ### Git LFS
 
 This repo uses [Git Large File Storage][git-lfs] (git LFS) for large files. If
@@ -185,6 +190,7 @@ clone`. The large files will be downloaded automatically with the rest of the
 repo.
 
 [git-lfs]: https://git-lfs.github.com/
+-->
 
 
 ### R Packages
