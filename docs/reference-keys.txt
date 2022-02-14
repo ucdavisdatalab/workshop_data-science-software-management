@@ -1,10 +1,10 @@
 introduction
 general-project-management
-project-planning-in-the-abstract-approaches-to-building-code
-the-single-developer-model-organic-code-development-with-no-constraints
+approaches-to-building-code
+the-single-developer-model
 the-collaborative-model
 the-fundamental-problem-of-project-management
-to-scaffold-from-single-person-to-a-large-project-you-need-coordination-and-planning
+coordination-and-planning
 coordination-and-planning-for-code
 coordination-and-planning-for-people
 however-your-planning-process-needs-to-be-responsive-to-emerging-needs-and-discoveries
@@ -19,7 +19,7 @@ evidence-based-scheduling
 some-comments-on-evidence-based-scheduling
 an-aside-about-methodologies
 an-aside-about-boiling-the-ocean
-development-workflow-in-the-abstract
+development-workflows-in-the-abstract
 choosing-a-language-is-choosing-an-ecosystem
 language-features
 when-is-a-language-ready
@@ -49,7 +49,7 @@ documentation
 documentation-should-describe-what-you-actually-do
 documentation-workflow
 breakout-room-discussion
-sample-project-for-people-without-a-project-of-their-own
+sample-project
 reflection
 references
 coda-the-cloud-is-just-someone-elses-computer
