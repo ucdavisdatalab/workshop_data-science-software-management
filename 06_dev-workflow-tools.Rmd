@@ -41,11 +41,11 @@ How do you know your code does what you say it does? A taxonomy of testing strat
 
 ## Version Control
 
-### Version control preserves a record of your changes over time
+Version control preserves a record of your changes over time.
 
 ![](./img/snapshots.png)
 
-### Version control allows you to fearlessly collaborate
+Version control allows you to fearlessly collaborate.
 
 ![](./img/branch-merge.png)
 
@@ -54,9 +54,10 @@ How do you know your code does what you say it does? A taxonomy of testing strat
 1.  One branch should always be deliverable, working code. Typically this is \"main\".
 2.  New work happens on development branches.
 3.  Merge new work using a \"general and lieutenants\" workflow:
-    1.  Developer (\"lieutenant\") pushes development branch to shared repository
-    2.  Project lead (\"general\") merges development branch into main branch, or talks to developer if there\'s a conflict
-4.  There are many possible workflows; the more your team knows, the more options you have.
+    -  Developer (\"lieutenant\") pushes development branch to shared repository.
+    -  Project lead (\"general\") merges development branch into main branch, or talks to developer if there\'s a conflict.
+4.  Everyone comments their commits.
+5.  There are many possible workflows; the more your team knows, the more options you have.
 
 ## Issue Tracking
 
@@ -79,7 +80,7 @@ Github, Trello, Microsoft Planner, Airtable, Jira, Fossil, Trac...
 
 ### Demo
 
-Github, because you\'re probably already using it
+Github, because you\'re probably already using it.
 
 ## Dependency management and environment management by language
 
@@ -114,7 +115,7 @@ Containers and VMs add an additional maintenance and testing burden. It may stil
 
 ## Deployment
 
-Where is the lever I pull to make this go? If you have an answer for dependency management, the deployment (i.e. automatic recreation of your code in its environment) is trivial.
+Where is the lever I pull to make this go? If you have an answer for dependency management, the deployment (i.e., automatic recreation of your code in its environment) is trivial.
 
 1.  Packaged environment and dependencies
     1.  .condarc
