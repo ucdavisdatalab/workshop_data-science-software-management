@@ -21,9 +21,9 @@
   
   
 
-<meta name="author" content="Derek Devnich" />
-<meta name="author" content="Kat Koziar" />
-<meta name="author" content="Pamela Reynolds" />
+<meta name="author" content="Derek Devnich (UC Merced)" />
+<meta name="author" content="Kat Koziar (UC Riverside)" />
+<meta name="author" content="Pamela Reynolds (UC Davis)" />
 
 
 <meta name="date" content="2022-02-14" />
@@ -79,7 +79,11 @@
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview</a></li>
 <li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
-<li class="chapter" data-level="2" data-path="general-project-management.html"><a href="general-project-management.html"><i class="fa fa-check"></i><b>2</b> General project management</a></li>
+<li class="chapter" data-level="2" data-path="general-project-management.html"><a href="general-project-management.html"><i class="fa fa-check"></i><b>2</b> General project management</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="general-project-management.html"><a href="general-project-management.html#definitions"><i class="fa fa-check"></i><b>2.1</b> Definitions</a></li>
+<li class="chapter" data-level="2.2" data-path="general-project-management.html"><a href="general-project-management.html#identification"><i class="fa fa-check"></i><b>2.2</b> Identification</a></li>
+</ul></li>
 <li class="chapter" data-level="3" data-path="approaches-to-building-code.html"><a href="approaches-to-building-code.html"><i class="fa fa-check"></i><b>3</b> Approaches to building code</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="approaches-to-building-code.html"><a href="approaches-to-building-code.html#the-single-developer-model"><i class="fa fa-check"></i><b>3.1</b> The single developer model</a></li>
@@ -122,9 +126,7 @@
 </ul></li>
 <li class="chapter" data-level="6.3" data-path="concrete-development-workflow-and-tools.html"><a href="concrete-development-workflow-and-tools.html#version-control"><i class="fa fa-check"></i><b>6.3</b> Version Control</a>
 <ul>
-<li class="chapter" data-level="6.3.1" data-path="concrete-development-workflow-and-tools.html"><a href="concrete-development-workflow-and-tools.html#version-control-preserves-a-record-of-your-changes-over-time"><i class="fa fa-check"></i><b>6.3.1</b> Version control preserves a record of your changes over time</a></li>
-<li class="chapter" data-level="6.3.2" data-path="concrete-development-workflow-and-tools.html"><a href="concrete-development-workflow-and-tools.html#version-control-allows-you-to-fearlessly-collaborate"><i class="fa fa-check"></i><b>6.3.2</b> Version control allows you to fearlessly collaborate</a></li>
-<li class="chapter" data-level="6.3.3" data-path="concrete-development-workflow-and-tools.html"><a href="concrete-development-workflow-and-tools.html#version-control-in-practice"><i class="fa fa-check"></i><b>6.3.3</b> Version control in practice</a></li>
+<li class="chapter" data-level="6.3.1" data-path="concrete-development-workflow-and-tools.html"><a href="concrete-development-workflow-and-tools.html#version-control-in-practice"><i class="fa fa-check"></i><b>6.3.1</b> Version control in practice</a></li>
 </ul></li>
 <li class="chapter" data-level="6.4" data-path="concrete-development-workflow-and-tools.html"><a href="concrete-development-workflow-and-tools.html#issue-tracking"><i class="fa fa-check"></i><b>6.4</b> Issue Tracking</a>
 <ul>
@@ -226,24 +228,21 @@
 </div>
 <div id="version-control" class="section level2" number="6.3">
 <h2><span class="header-section-number">6.3</span> Version Control</h2>
-<div id="version-control-preserves-a-record-of-your-changes-over-time" class="section level3" number="6.3.1">
-<h3><span class="header-section-number">6.3.1</span> Version control preserves a record of your changes over time</h3>
+<p>Version control preserves a record of your changes over time.</p>
 <p><img src="img/snapshots.png" /></p>
-</div>
-<div id="version-control-allows-you-to-fearlessly-collaborate" class="section level3" number="6.3.2">
-<h3><span class="header-section-number">6.3.2</span> Version control allows you to fearlessly collaborate</h3>
+<p>Version control allows you to fearlessly collaborate.</p>
 <p><img src="img/branch-merge.png" /></p>
-</div>
-<div id="version-control-in-practice" class="section level3" number="6.3.3">
-<h3><span class="header-section-number">6.3.3</span> Version control in practice</h3>
+<div id="version-control-in-practice" class="section level3" number="6.3.1">
+<h3><span class="header-section-number">6.3.1</span> Version control in practice</h3>
 <ol style="list-style-type: decimal">
 <li>One branch should always be deliverable, working code. Typically this is "main".</li>
 <li>New work happens on development branches.</li>
 <li>Merge new work using a "general and lieutenants" workflow:
-<ol style="list-style-type: decimal">
-<li>Developer ("lieutenant") pushes development branch to shared repository</li>
-<li>Project lead ("general") merges development branch into main branch, or talks to developer if there's a conflict</li>
-</ol></li>
+<ul>
+<li>Developer ("lieutenant") pushes development branch to shared repository.</li>
+<li>Project lead ("general") merges development branch into main branch, or talks to developer if there's a conflict.</li>
+</ul></li>
+<li>Everyone comments their commits.</li>
 <li>There are many possible workflows; the more your team knows, the more options you have.</li>
 </ol>
 </div>
@@ -271,7 +270,7 @@
 </div>
 <div id="demo" class="section level3" number="6.4.3">
 <h3><span class="header-section-number">6.4.3</span> Demo</h3>
-<p>Github, because you're probably already using it</p>
+<p>Github, because you're probably already using it.</p>
 </div>
 </div>
 <div id="dependency-management-and-environment-management-by-language" class="section level2" number="6.5">
@@ -311,7 +310,7 @@
 </div>
 <div id="deployment" class="section level2" number="6.6">
 <h2><span class="header-section-number">6.6</span> Deployment</h2>
-<p>Where is the lever I pull to make this go? If you have an answer for dependency management, the deployment (i.e. automatic recreation of your code in its environment) is trivial.</p>
+<p>Where is the lever I pull to make this go? If you have an answer for dependency management, the deployment (i.e., automatic recreation of your code in its environment) is trivial.</p>
 <ol style="list-style-type: decimal">
 <li>Packaged environment and dependencies
 <ol style="list-style-type: decimal">

@@ -21,9 +21,9 @@
   
   
 
-<meta name="author" content="Derek Devnich" />
-<meta name="author" content="Kat Koziar" />
-<meta name="author" content="Pamela Reynolds" />
+<meta name="author" content="Derek Devnich (UC Merced)" />
+<meta name="author" content="Kat Koziar (UC Riverside)" />
+<meta name="author" content="Pamela Reynolds (UC Davis)" />
 
 
 <meta name="date" content="2022-02-14" />
@@ -79,7 +79,11 @@
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview</a></li>
 <li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
-<li class="chapter" data-level="2" data-path="general-project-management.html"><a href="general-project-management.html"><i class="fa fa-check"></i><b>2</b> General project management</a></li>
+<li class="chapter" data-level="2" data-path="general-project-management.html"><a href="general-project-management.html"><i class="fa fa-check"></i><b>2</b> General project management</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="general-project-management.html"><a href="general-project-management.html#definitions"><i class="fa fa-check"></i><b>2.1</b> Definitions</a></li>
+<li class="chapter" data-level="2.2" data-path="general-project-management.html"><a href="general-project-management.html#identification"><i class="fa fa-check"></i><b>2.2</b> Identification</a></li>
+</ul></li>
 <li class="chapter" data-level="3" data-path="approaches-to-building-code.html"><a href="approaches-to-building-code.html"><i class="fa fa-check"></i><b>3</b> Approaches to building code</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="approaches-to-building-code.html"><a href="approaches-to-building-code.html#the-single-developer-model"><i class="fa fa-check"></i><b>3.1</b> The single developer model</a></li>
@@ -122,9 +126,7 @@
 </ul></li>
 <li class="chapter" data-level="6.3" data-path="concrete-development-workflow-and-tools.html"><a href="concrete-development-workflow-and-tools.html#version-control"><i class="fa fa-check"></i><b>6.3</b> Version Control</a>
 <ul>
-<li class="chapter" data-level="6.3.1" data-path="concrete-development-workflow-and-tools.html"><a href="concrete-development-workflow-and-tools.html#version-control-preserves-a-record-of-your-changes-over-time"><i class="fa fa-check"></i><b>6.3.1</b> Version control preserves a record of your changes over time</a></li>
-<li class="chapter" data-level="6.3.2" data-path="concrete-development-workflow-and-tools.html"><a href="concrete-development-workflow-and-tools.html#version-control-allows-you-to-fearlessly-collaborate"><i class="fa fa-check"></i><b>6.3.2</b> Version control allows you to fearlessly collaborate</a></li>
-<li class="chapter" data-level="6.3.3" data-path="concrete-development-workflow-and-tools.html"><a href="concrete-development-workflow-and-tools.html#version-control-in-practice"><i class="fa fa-check"></i><b>6.3.3</b> Version control in practice</a></li>
+<li class="chapter" data-level="6.3.1" data-path="concrete-development-workflow-and-tools.html"><a href="concrete-development-workflow-and-tools.html#version-control-in-practice"><i class="fa fa-check"></i><b>6.3.1</b> Version control in practice</a></li>
 </ul></li>
 <li class="chapter" data-level="6.4" data-path="concrete-development-workflow-and-tools.html"><a href="concrete-development-workflow-and-tools.html#issue-tracking"><i class="fa fa-check"></i><b>6.4</b> Issue Tracking</a>
 <ul>
@@ -174,8 +176,8 @@
             <section class="normal" id="section-">
 <div id="concrete-project-planning" class="section level1" number="4">
 <h1><span class="header-section-number">4</span> Concrete project planning</h1>
-<p>These are things which should be written as documentation during the project development phase. Writing this alongside your DMP will help develop the overall design.</p>
-<p>(Project planning is all about checklists. There are no cool graphics for project planning).</p>
+<p>These are things which should be written as documentation during the project development phase. Writing this alongside your Data Management Plan (<a href="https://www.library.ucdavis.edu/service/research-data-services/plan-2/">DMP</a>) will help develop the overall design.</p>
+<p>(Project planning is all about checklists. There are no cool graphics for project planning.)</p>
 <div id="governance" class="section level2" number="4.1">
 <h2><span class="header-section-number">4.1</span> Governance</h2>
 <p>How are decisions made? Who makes them?</p>
@@ -200,12 +202,11 @@
 </div>
 <div id="herding-your-cats" class="section level2" number="4.3">
 <h2><span class="header-section-number">4.3</span> Herding your cats</h2>
-<ol style="list-style-type: decimal">
-<li>By default, give everyone access to everything. If you can't do this, you have a new implied dependency: Security.</li>
-<li>Establish a common workflow for collaborating on code (e.g., "we share all code in a private Github repository")</li>
-<li>Establish a common workflow for collaborating on documents</li>
-<li>Large group? Delegate to team leads.</li>
-</ol>
+<p><img src="img/cat-herding-software-dev.jpeg" />
+1. By default, give everyone access to everything. If you can't do this, you have a new implied dependency: Security.
+2. Establish a common workflow for collaborating on code (e.g., "we share all code in a private Github repository")
+3. Establish a common workflow for collaborating on documents
+4. Large group? Delegate to team leads.</p>
 </div>
 <div id="scheduling" class="section level2" number="4.4">
 <h2><span class="header-section-number">4.4</span> Scheduling</h2>
@@ -219,7 +220,6 @@
 </ol>
 <div id="evidence-based-scheduling" class="section level3" number="4.4.1">
 <h3><span class="header-section-number">4.4.1</span> Evidence-based scheduling</h3>
-<p>cf. <a href="https://www.joelonsoftware.com/2007/10/26/evidence-based-scheduling/" class="uri">https://www.joelonsoftware.com/2007/10/26/evidence-based-scheduling/</a></p>
 <ol style="list-style-type: decimal">
 <li>Estimate task time</li>
 <li>Start the clock</li>
@@ -228,6 +228,7 @@
 <li>Assess accuracy</li>
 <li>Weight new estimates</li>
 </ol>
+<p>See more in <a href="https://www.joelonsoftware.com/2007/10/26/evidence-based-scheduling/">tthis blog post by Joel Spolsky</a></p>
 </div>
 <div id="some-comments-on-evidence-based-scheduling" class="section level3" number="4.4.2">
 <h3><span class="header-section-number">4.4.2</span> Some comments on evidence-based scheduling</h3>
@@ -250,10 +251,9 @@
 <div id="an-aside-about-boiling-the-ocean" class="section level3" number="4.4.4">
 <h3><span class="header-section-number">4.4.4</span> An aside about boiling the ocean</h3>
 <p>A common mistake is trying to build everything at once. Start small and build the code in a way that scales. Don't jump to the next level of complexity until you need it.</p>
-<ol style="list-style-type: decimal">
-<li><a href="https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html" class="uri">https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html</a></li>
-<li><a href="https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/" class="uri">https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/</a></li>
-</ol>
+<p>Some case and point examples:
+1. <a href="https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html">Command line tools can be faster than your hadoop cluster</a>
+2. <a href="https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/">Cleaning DNA sequences with R and AWK</a></p>
 
 </div>
 </div>

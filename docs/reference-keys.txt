@@ -1,5 +1,7 @@
 introduction
 general-project-management
+definitions
+identification
 approaches-to-building-code
 the-single-developer-model
 the-collaborative-model
@@ -30,8 +32,6 @@ your-development-process-should-be-repeatable
 testing-and-validation
 the-metaphysics-of-integrationsystem-testing
 version-control
-version-control-preserves-a-record-of-your-changes-over-time
-version-control-allows-you-to-fearlessly-collaborate
 version-control-in-practice
 issue-tracking
 key-features
