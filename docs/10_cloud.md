@@ -28,4 +28,4 @@ Someone\'s slow, expensive computer...
 | Kinesis               | Apache Kafka                |
 | QuickSight            | Tableau                     |
 
--   <https://news.ycombinator.com/item?id=23314973>
+[From ycombinator](https://news.ycombinator.com/item?id=23314973)
