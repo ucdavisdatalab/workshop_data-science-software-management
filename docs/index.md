@@ -1,7 +1,7 @@
 ---
 title: Managing Code and Software for Applied Data Science Projects
 author: [Derek Devnich, Kat Koziar, Pamela Reynolds]
-date: "2022-02-07"
+date: "2022-02-14"
 
 github-repo: ucdavisdatalab/workshop_ds-software-management
 url: "https://ucdavisdatalab.github.io/workshop_data-science-software-management/"

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Managing Code and Software for Applied Data Science Projects</title>
-  <meta name="description" content="Managing Code and Software for Applied Data Science Projects" />
+  <title>11 Coda: The cloud is just someone else's computer | Managing Code and Software for Applied Data Science Projects</title>
+  <meta name="description" content="11 Coda: The cloud is just someone else's computer | Managing Code and Software for Applied Data Science Projects" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Managing Code and Software for Applied Data Science Projects" />
+  <meta property="og:title" content="11 Coda: The cloud is just someone else's computer | Managing Code and Software for Applied Data Science Projects" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://ucdavisdatalab.github.io/workshop_data-science-software-management/" />
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="ucdavisdatalab/workshop_ds-software-management" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Managing Code and Software for Applied Data Science Projects" />
+  <meta name="twitter:title" content="11 Coda: The cloud is just someone else's computer | Managing Code and Software for Applied Data Science Projects" />
   
   
   
@@ -33,8 +33,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="references.html"/>
 
-<link rel="next" href="introduction.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -172,16 +172,114 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Managing Code and Software for Applied Data Science Projects</h1>
-<p class="author"><em>Derek Devnich</em></p>
-<p class="author"><em>Kat Koziar</em></p>
-<p class="author"><em>Pamela Reynolds</em></p>
-<p class="date"><em>2022-02-14</em></p>
-</div>
-<div id="overview" class="section level1 unnumbered">
-<h1>Overview</h1>
-<p>Creating a repeatable process for developing your software is an important component of reproducible research. This workshop discusses how and why we build code, possible development workflows, project management strategies, and tool selection. This workshop is designed for learners who are writing and applying code for their research projects, but have no or limited formal computer science training. After this workshop, learners should be able to describe the basic process of developing code, compare the benefits of different tools and coding workflows based on project goals and constraints, and identify appropriate strategies for managing and archiving project artifacts (including code and data). There are no specific prerequisites for this lecture/discussion-focused workshop, but it is designed for learners with prior coding experience.</p>
+<div id="coda-the-cloud-is-just-someone-elses-computer" class="section level1" number="11">
+<h1><span class="header-section-number">11</span> Coda: The cloud is just someone else's computer</h1>
+<p>Someone's slow, expensive computer…</p>
+<table>
+<thead>
+<tr class="header">
+<th>AWS</th>
+<th>Free or DIY</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Route 53</td>
+<td>NSD</td>
+</tr>
+<tr class="even">
+<td>WAF</td>
+<td>modsecurity</td>
+</tr>
+<tr class="odd">
+<td>SES</td>
+<td>Postfix</td>
+</tr>
+<tr class="even">
+<td>Inspector</td>
+<td>OSSEC</td>
+</tr>
+<tr class="odd">
+<td>GuardDuty</td>
+<td>Snort</td>
+</tr>
+<tr class="even">
+<td>Data Pipeline</td>
+<td>cron and bash</td>
+</tr>
+<tr class="odd">
+<td>Athena</td>
+<td>Prestodb</td>
+</tr>
+<tr class="even">
+<td>Glue</td>
+<td>Hive Metastore and Spark</td>
+</tr>
+<tr class="odd">
+<td>OpsWorks</td>
+<td>Chef</td>
+</tr>
+<tr class="even">
+<td>VPC</td>
+<td>a VLAN</td>
+</tr>
+<tr class="odd">
+<td>Snowball</td>
+<td>a truck full of hard drives</td>
+</tr>
+<tr class="even">
+<td>CloudWatch</td>
+<td>syslogd</td>
+</tr>
+<tr class="odd">
+<td>Neptune</td>
+<td>Neo4j</td>
+</tr>
+<tr class="even">
+<td>ElastiCache</td>
+<td>Redis</td>
+</tr>
+<tr class="odd">
+<td>DynamoDB</td>
+<td>MongoDB</td>
+</tr>
+<tr class="even">
+<td>S3 Glacier</td>
+<td>DVD backup</td>
+</tr>
+<tr class="odd">
+<td>EFS</td>
+<td>NFS</td>
+</tr>
+<tr class="even">
+<td>Elastic Block Store</td>
+<td>a SAN</td>
+</tr>
+<tr class="odd">
+<td>Elastic Beanstalk</td>
+<td>Apache Tomcat</td>
+</tr>
+<tr class="even">
+<td>EMR</td>
+<td>Apache Hadoop</td>
+</tr>
+<tr class="odd">
+<td>Elastic Cloud Compute</td>
+<td>a virtual machine</td>
+</tr>
+<tr class="even">
+<td>Kinesis</td>
+<td>Apache Kafka</td>
+</tr>
+<tr class="odd">
+<td>QuickSight</td>
+<td>Tableau</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=23314973" class="uri">https://news.ycombinator.com/item?id=23314973</a></li>
+</ul>
 
 </div>
             </section>
@@ -189,8 +287,8 @@
           </div>
         </div>
       </div>
+<a href="references.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="introduction.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -211,7 +309,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/ucdavisdatalab/workshop_data-science-software-management/edit/master/index.Rmd",
+"link": "https://github.com/ucdavisdatalab/workshop_data-science-software-management/edit/master/10_cloud.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -219,7 +317,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/ucdavisdatalab/workshop_data-science-software-management/blob/master/index.Rmd",
+"link": "https://github.com/ucdavisdatalab/workshop_data-science-software-management/blob/master/10_cloud.Rmd",
 "text": null
 },
 "download": null,

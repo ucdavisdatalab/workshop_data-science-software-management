@@ -1,0 +1,31 @@
+# Coda: The cloud is just someone else\'s computer
+
+Someone\'s slow, expensive computer...
+
+| AWS                   | Free or DIY                 |
+|-----------------------|-----------------------------|
+| Route 53              | NSD                         |
+| WAF                   | modsecurity                 |
+| SES                   | Postfix                     |
+| Inspector             | OSSEC                       |
+| GuardDuty             | Snort                       |
+| Data Pipeline         | cron and bash               |
+| Athena                | Prestodb                    |
+| Glue                  | Hive Metastore and Spark    |
+| OpsWorks              | Chef                        |
+| VPC                   | a VLAN                      |
+| Snowball              | a truck full of hard drives |
+| CloudWatch            | syslogd                     |
+| Neptune               | Neo4j                       |
+| ElastiCache           | Redis                       |
+| DynamoDB              | MongoDB                     |
+| S3 Glacier            | DVD backup                  |
+| EFS                   | NFS                         |
+| Elastic Block Store   | a SAN                       |
+| Elastic Beanstalk     | Apache Tomcat               |
+| EMR                   | Apache Hadoop               |
+| Elastic Cloud Compute | a virtual machine           |
+| Kinesis               | Apache Kafka                |
+| QuickSight            | Tableau                     |
+
+-   <https://news.ycombinator.com/item?id=23314973>

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Managing Code and Software for Applied Data Science Projects</title>
-  <meta name="description" content="Managing Code and Software for Applied Data Science Projects" />
+  <title>3 Project planning in the abstract: Approaches to building code | Managing Code and Software for Applied Data Science Projects</title>
+  <meta name="description" content="3 Project planning in the abstract: Approaches to building code | Managing Code and Software for Applied Data Science Projects" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Managing Code and Software for Applied Data Science Projects" />
+  <meta property="og:title" content="3 Project planning in the abstract: Approaches to building code | Managing Code and Software for Applied Data Science Projects" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://ucdavisdatalab.github.io/workshop_data-science-software-management/" />
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="ucdavisdatalab/workshop_ds-software-management" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Managing Code and Software for Applied Data Science Projects" />
+  <meta name="twitter:title" content="3 Project planning in the abstract: Approaches to building code | Managing Code and Software for Applied Data Science Projects" />
   
   
   
@@ -33,8 +33,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="introduction.html"/>
+<link rel="prev" href="general-project-management.html"/>
+<link rel="next" href="concrete-project-planning.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -172,25 +172,90 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Managing Code and Software for Applied Data Science Projects</h1>
-<p class="author"><em>Derek Devnich</em></p>
-<p class="author"><em>Kat Koziar</em></p>
-<p class="author"><em>Pamela Reynolds</em></p>
-<p class="date"><em>2022-02-14</em></p>
+<div id="project-planning-in-the-abstract-approaches-to-building-code" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Project planning in the abstract: Approaches to building code</h1>
+<div id="the-single-developer-model-organic-code-development-with-no-constraints" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> The single developer model: Organic code development with no constraints</h2>
+<ol style="list-style-type: decimal">
+<li>Work from the inside out. Increase the complexity and generality of your code as circumstances demand.</li>
+<li>Given (1), commit to rewriting your code on an ongoing basis.</li>
+<li>Use code organization (functions, objects, modules, etc.) to reduce cognitive overhead
+<ol style="list-style-type: decimal">
+<li>Compartmentalizing your code makes it easier to navigate and understand</li>
+<li>Code chunks that are truly done can be "frozen" as compartmentalized functions or modules, making it easier to reason about and rewrite the remaining code</li>
+</ol></li>
+<li>Preserve useful practices across projects by developing a standard approach and toolkit</li>
+</ol>
 </div>
-<div id="overview" class="section level1 unnumbered">
-<h1>Overview</h1>
-<p>Creating a repeatable process for developing your software is an important component of reproducible research. This workshop discusses how and why we build code, possible development workflows, project management strategies, and tool selection. This workshop is designed for learners who are writing and applying code for their research projects, but have no or limited formal computer science training. After this workshop, learners should be able to describe the basic process of developing code, compare the benefits of different tools and coding workflows based on project goals and constraints, and identify appropriate strategies for managing and archiving project artifacts (including code and data). There are no specific prerequisites for this lecture/discussion-focused workshop, but it is designed for learners with prior coding experience.</p>
+<div id="the-collaborative-model" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> The collaborative model</h2>
+<div id="the-fundamental-problem-of-project-management" class="section level3" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> The fundamental problem of project management</h3>
+<p>Communication channels grow as the square of the number of people: n(n -1) / 2</p>
+<p>cf. <a href="https://en.wikipedia.org/wiki/Complete_graph" class="uri">https://en.wikipedia.org/wiki/Complete_graph</a></p>
+<ul>
+<li><p>2 people - 1 channel</p>
+<p><img src="files/complete_graph_k2_240px.png" /></p></li>
+<li><p>3 people - 3 channels</p>
+<p><img src="files/complete_graph_k3_240px.png" /></p></li>
+<li><p>4 people - 6 channels</p>
+<p><img src="files/complete_graph_k4_240px.png" /></p></li>
+<li><p>5 people - 10 channels</p>
+<p><img src="files/complete_graph_k5_240px.png" /></p></li>
+<li><p>8 people - 28 channels</p>
+<p><img src="files/complete_graph_k8_240px.png" /></p></li>
+<li><p>12 people - 66 channels</p>
+<p><img src="files/complete_graph_k12_240px.png" /></p></li>
+</ul>
+</div>
+<div id="to-scaffold-from-single-person-to-a-large-project-you-need-coordination-and-planning" class="section level3" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> To scaffold from single person to a large project, you need coordination and planning</h3>
+<div id="coordination-and-planning-for-code" class="section level4" number="3.2.2.1">
+<h4><span class="header-section-number">3.2.2.1</span> Coordination and planning for code</h4>
+<ol style="list-style-type: decimal">
+<li>Functional divisions: Organize the code base into (somewhat) separable concerns</li>
+<li>Each functional division should have a functional lead (the point person who makes sure that work moves forward). Depending on project size, they may be the only person.</li>
+<li>Functional interfaces: How do the functional pieces work together or communicate? This can be implicit (we all agree how it's going to work) or explicit (we write an API for different parts of the code to communicate). APIs are generally the hallmark of a large code base, and overkill for a small one. However, it's still important to think about how the parts of the project work together, because it requires explicit collaboration in the design and in determining what can be released when.</li>
+</ol>
+</div>
+<div id="coordination-and-planning-for-people" class="section level4" number="3.2.2.2">
+<h4><span class="header-section-number">3.2.2.2</span> Coordination and planning for people</h4>
+<ol style="list-style-type: decimal">
+<li>Release schedule: What goes in what release? Who works on what?</li>
+<li>Integrating new team members</li>
+<li>Assigning new issues and bug fixes</li>
+<li>Repository management: Branching strategy, merging, tagging</li>
+<li>Test and release oversight: Have we done enough testing? Do we release with known bugs? Do we delay releases? Do we revisit these decisions as our hypothetical due date slips further into the past?</li>
+</ol>
+</div>
+</div>
+<div id="however-your-planning-process-needs-to-be-responsive-to-emerging-needs-and-discoveries" class="section level3" number="3.2.3">
+<h3><span class="header-section-number">3.2.3</span> However! Your planning process needs to be responsive to emerging needs and discoveries</h3>
+<div id="you-want-to-recapture-some-of-that-organic-code-development" class="section level4" number="3.2.3.1">
+<h4><span class="header-section-number">3.2.3.1</span> You want to recapture some of that "organic" code development</h4>
+<ol style="list-style-type: decimal">
+<li>Versioned releases containing planned improvements and fixes ("in 3.1, we will add…")</li>
+<li>Rules for deprecation (e.g. overloading APIs, offering alternative APIs) as the project expands or changes.</li>
+<li>Community bug reports and feature requests</li>
+<li>User field studies (telemetry is too narrow; what you really want are patterns of behavior. What irritates or stumps people when they try to use the code?)</li>
+</ol>
+</div>
+<div id="you-want-to-avoid-doing-unnecessary-work" class="section level4" number="3.2.3.2">
+<h4><span class="header-section-number">3.2.3.2</span> You want to avoid doing unnecessary work</h4>
+<p>What's the difference between "enough" code organization and "too much" code organization? If you're making things that you'll never use, you're spending too much time organizing and not enough time doing. That's how you end up with AbstractSingletonProxyFactoryBean:
+<a href="https://docs.spring.io/spring-framework/docs/2.5.x/javadoc-api/org/springframework/aop/framework/AbstractSingletonProxyFactoryBean.html" class="uri">https://docs.spring.io/spring-framework/docs/2.5.x/javadoc-api/org/springframework/aop/framework/AbstractSingletonProxyFactoryBean.html</a></p>
 
+</div>
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="introduction.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="general-project-management.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="concrete-project-planning.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -211,7 +276,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/ucdavisdatalab/workshop_data-science-software-management/edit/master/index.Rmd",
+"link": "https://github.com/ucdavisdatalab/workshop_data-science-software-management/edit/master/03_abstract-proj-planning.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -219,7 +284,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/ucdavisdatalab/workshop_data-science-software-management/blob/master/index.Rmd",
+"link": "https://github.com/ucdavisdatalab/workshop_data-science-software-management/blob/master/03_abstract-proj-planning.Rmd",
 "text": null
 },
 "download": null,

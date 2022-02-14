@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Managing Code and Software for Applied Data Science Projects</title>
-  <meta name="description" content="Managing Code and Software for Applied Data Science Projects" />
+  <title>5 Development workflow in the abstract | Managing Code and Software for Applied Data Science Projects</title>
+  <meta name="description" content="5 Development workflow in the abstract | Managing Code and Software for Applied Data Science Projects" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Managing Code and Software for Applied Data Science Projects" />
+  <meta property="og:title" content="5 Development workflow in the abstract | Managing Code and Software for Applied Data Science Projects" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://ucdavisdatalab.github.io/workshop_data-science-software-management/" />
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="ucdavisdatalab/workshop_ds-software-management" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Managing Code and Software for Applied Data Science Projects" />
+  <meta name="twitter:title" content="5 Development workflow in the abstract | Managing Code and Software for Applied Data Science Projects" />
   
   
   
@@ -33,8 +33,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="introduction.html"/>
+<link rel="prev" href="concrete-project-planning.html"/>
+<link rel="next" href="concrete-development-workflow-and-tools.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -172,25 +172,63 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Managing Code and Software for Applied Data Science Projects</h1>
-<p class="author"><em>Derek Devnich</em></p>
-<p class="author"><em>Kat Koziar</em></p>
-<p class="author"><em>Pamela Reynolds</em></p>
-<p class="date"><em>2022-02-14</em></p>
+<div id="development-workflow-in-the-abstract" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Development workflow in the abstract</h1>
+<div id="choosing-a-language-is-choosing-an-ecosystem" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> Choosing a language is choosing an ecosystem</h2>
+<p>Your workflow and available tools are depend in part on the language you're using, so let's talk about that for a minute before diving into more specifics.</p>
+<p><img src="files/language_ecosystem.svg" /></p>
+<div id="language-features" class="section level3" number="5.1.1">
+<h3><span class="header-section-number">5.1.1</span> Language features</h3>
+<p>A language (and some of its libraries) is maintained by a core team, and has a sales pitch about what makes it neat in theory. However, the core language features are not enough; there are additional practical considerations:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Community</strong>. This can include forums, documentation, Q&amp;A sites, and other evidence of enthusiastic hobby and personal use. It's easy to find help on how to get started. There is evidence of continuing organic support for the language ecosystem.</li>
+<li><strong>Tools</strong>. Features that make the language usable in day-to-day work, including: Code editor support, syntax highlighting, debuggers, profiling, tools for packaging and deployment, version control, testing, automated doc extraction, and integration with outside tools (web servers, databases, interchange formats like XML/JSON). Some of this will be included in Core Libraries.</li>
+<li><strong>Working deployments</strong>. You see the language being used in real-world projects. The pitfalls for deployment, performance, and scaling are well-known and documented. The community has confidence in (mostly) bug-free operation. Edge cases, errata, and know bugs are documented. There is a community of understanding around how to use the tool effectively and avoid tarpits.</li>
+</ol>
 </div>
-<div id="overview" class="section level1 unnumbered">
-<h1>Overview</h1>
-<p>Creating a repeatable process for developing your software is an important component of reproducible research. This workshop discusses how and why we build code, possible development workflows, project management strategies, and tool selection. This workshop is designed for learners who are writing and applying code for their research projects, but have no or limited formal computer science training. After this workshop, learners should be able to describe the basic process of developing code, compare the benefits of different tools and coding workflows based on project goals and constraints, and identify appropriate strategies for managing and archiving project artifacts (including code and data). There are no specific prerequisites for this lecture/discussion-focused workshop, but it is designed for learners with prior coding experience.</p>
+<div id="when-is-a-language-ready" class="section level3" number="5.1.2">
+<h3><span class="header-section-number">5.1.2</span> When is a language ready?</h3>
+<p><img src="files/programmer_migration.svg" /></p>
+<ul>
+<li><a href="https://apenwarr.ca/log/20190318" class="uri">https://apenwarr.ca/log/20190318</a></li>
+</ul>
+<p>In general, a language ecosystem will do some things well and other things poorly. Some examples:</p>
+<ol style="list-style-type: decimal">
+<li>Julia: Good tools and community, but we don’t see it widely deployed (this might be changing, watch this space)</li>
+<li>Rust: Checks all boxes, but don’t have a lot of deployed examples for scientific computing <strong>specifically</strong>. Example of a promising ecosystem.</li>
+<li>Many proprietary statistics tools: Little to no organic support for integrating into a wider toolchain, which can be problematic from a purely practical standpoint.</li>
+</ol>
+</div>
+</div>
+<div id="co-dependence-and-feedback-between-tools-and-methods" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> Co-dependence and feedback between tools and methods</h2>
+<ol style="list-style-type: decimal">
+<li>What is your goal?</li>
+<li>What products will you make to meet your goal?</li>
+<li>What tools are available?</li>
+<li>What decisions do you have to make given pre-existing constraints on, e.g., language, libraries, computing environments?</li>
+<li>How do you make decisions about workflow and tools? Does this fit into your overall decision-making process as described above?</li>
+<li>How much mixing of environments? outside API, databases, etc? Total compute needs? How flexible and/or expansive do you need to be? These issues are a blend of "how many outside drivers are you willing to accept?" and "how much do you plan to grow?"</li>
+</ol>
+</div>
+<div id="tool-evaluation" class="section level2" number="5.3">
+<h2><span class="header-section-number">5.3</span> Tool evaluation</h2>
+<p><img src="files/is_it_worth_the_time_2x.png" /></p>
+<ul>
+<li><a href="https://xkcd.com/1205/" class="uri">https://xkcd.com/1205/</a></li>
+</ul>
+<p>All code, tools, and management practices have an opportunity cost: The time you spend coding, supporting, teaching, and managing could have been spent doing something else. You should adopt tools that are a net benefit to your project.</p>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="introduction.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="concrete-project-planning.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="concrete-development-workflow-and-tools.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -211,7 +249,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/ucdavisdatalab/workshop_data-science-software-management/edit/master/index.Rmd",
+"link": "https://github.com/ucdavisdatalab/workshop_data-science-software-management/edit/master/04_concrete-proj-planning.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -219,7 +257,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/ucdavisdatalab/workshop_data-science-software-management/blob/master/index.Rmd",
+"link": "https://github.com/ucdavisdatalab/workshop_data-science-software-management/blob/master/04_concrete-proj-planning.Rmd",
 "text": null
 },
 "download": null,
