@@ -43,11 +43,11 @@ How do you know your code does what you say it does? A taxonomy of testing strat
 
 ### Version control preserves a record of your changes over time
 
-![](files/snapshots.png)
+![](./img/snapshots.png)
 
 ### Version control allows you to fearlessly collaborate
 
-![](files/branch-merge.png)
+![](./img/branch-merge.png)
 
 ### Version control in practice
 
@@ -85,19 +85,19 @@ Github, because you\'re probably already using it
 
 Broadly speaking, you want to be able to set up a self-contained environment that contains all of your weird dependencies, such that you can tear it down and rebuild it if something goes wrong.
 
-![](files/python_environment_2x.png)
+![](./img/python_environment_2x.png)
 
--   <https://xkcd.com/1987/>
+[xkcd comic](<https://xkcd.com/1987/)
 
 ### Python
 
-1.  Conda package manager and environments (cf. <https://github.com/devnich/catalina-setup#install-python-anaconda-distribution>)
+1.  Conda package manager and environments [see example here](https://github.com/devnich/catalina-setup#install-python-anaconda-distribution)
 2.  Pip and virtualenv
 
 ### R
 
-1.  renv: <https://rstudio.github.io/renv/articles/renv.html>
-2.  Read about additional options here: <https://github.com/DataCurationNetwork/data-primers/blob/master/R%20Data%20Curation%20Primer/R-data-curation-primer.md>
+1.  [renv](https://rstudio.github.io/renv/articles/renv.html)
+2.  Read about additional options [here](https://github.com/DataCurationNetwork/data-primers/blob/master/R%20Data%20Curation%20Primer/R-data-curation-primer.md)
 
 ### SQL
 

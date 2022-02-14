@@ -2,7 +2,7 @@
 
 1.  Peopleware: Productive Projects and Teams (DeMarco & Lister)
 
-    One of the few project management books that doesn\'t suck. Specifically about managing software projects, but contains a lot of generally useful guidance.
+    A project management books that is actually pretty good. Specifically about managing software projects, but contains a lot of generally useful guidance.
 
 2.  Clean Code (Martin)
 

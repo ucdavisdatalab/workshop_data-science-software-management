@@ -18,6 +18,6 @@ Discuss one of your projects (or the sample project listed at the end of this se
     2.  How do the various parts of the code hook together?
     3.  What are the inputs and outputs?
 
-## Sample project for people without a project of their own
+## Sample project 
 
-[Portfolio factors project repo](https://github.com/devnich/portfolio-factors)
+If you don't have a project of your own you can apply these prompts to Derek's [Portfolio Factors repo](https://github.com/devnich/portfolio-factors)

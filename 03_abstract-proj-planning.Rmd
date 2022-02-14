@@ -1,6 +1,8 @@
-# Project planning in the abstract: Approaches to building code
+# Approaches to building code
 
-## The single developer model: Organic code development with no constraints
+## The single developer model
+
+When you have organic code development with no constraints:
 
 1.  Work from the inside out. Increase the complexity and generality of your code as circumstances demand.
 2.  Given (1), commit to rewriting your code on an ongoing basis.
@@ -19,29 +21,31 @@ cf. <https://en.wikipedia.org/wiki/Complete_graph>
 
 -   2 people - 1 channel
 
-    ![](files/complete_graph_k2_240px.png)
+    ![](./img/complete_graph_k2_240px.png)
 
 -   3 people - 3 channels
 
-    ![](files/complete_graph_k3_240px.png)
+    ![](./img/complete_graph_k3_240px.png)
 
 -   4 people - 6 channels
 
-    ![](files/complete_graph_k4_240px.png)
+    ![](./img/complete_graph_k4_240px.png)
 
 -   5 people - 10 channels
 
-    ![](files/complete_graph_k5_240px.png)
+    ![](./img/complete_graph_k5_240px.png)
 
 -   8 people - 28 channels
 
-    ![](files/complete_graph_k8_240px.png)
+    ![](./img/complete_graph_k8_240px.png)
 
 -   12 people - 66 channels
 
-    ![](files/complete_graph_k12_240px.png)
+    ![](./img/complete_graph_k12_240px.png)
 
-### To scaffold from single person to a large project, you need coordination and planning
+### Coordination and planning
+
+To scaffold from single person to a large project, you need coordination and planning for both your code **and** the people on your team.
 
 #### Coordination and planning for code
 
@@ -68,5 +72,5 @@ cf. <https://en.wikipedia.org/wiki/Complete_graph>
 
 #### You want to avoid doing unnecessary work
 
-What\'s the difference between \"enough\" code organization and \"too much\" code organization? If you\'re making things that you\'ll never use, you\'re spending too much time organizing and not enough time doing. That\'s how you end up with AbstractSingletonProxyFactoryBean:
-<https://docs.spring.io/spring-framework/docs/2.5.x/javadoc-api/org/springframework/aop/framework/AbstractSingletonProxyFactoryBean.html>
+What\'s the difference between \"enough\" code organization and \"too much\" code organization? If you\'re making things that you\'ll never use, you\'re spending too much time organizing and not enough time doing. That\'s how you end up with [AbstractSingletonProxyFactoryBean](
+<https://docs.spring.io/spring-framework/docs/2.5.x/javadoc-api/org/springframework/aop/framework/AbstractSingletonProxyFactoryBean.html)
