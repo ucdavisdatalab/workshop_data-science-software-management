@@ -1,6 +1,6 @@
-# Coda: The cloud is just someone else\'s computer
+# Coda: the cloud
 
-Someone\'s slow, expensive computer...
+It's just someone else\'s slow, expensive computer...
 
 | AWS                   | Free or DIY                 |
 |-----------------------|-----------------------------|

@@ -1,4 +1,4 @@
-# Additional Resources
+# Additional resources
 
 Check out these related workshop materials:
 

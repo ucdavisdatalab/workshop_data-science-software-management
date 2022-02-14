@@ -1,4 +1,4 @@
-# Breakout Room Discussion
+# Discussion
 
 Discuss one of your projects (or the sample project listed at the end of this section) with your newfound friends and collaborators. Here are some issues for you to think about:
 
