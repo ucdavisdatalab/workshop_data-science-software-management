@@ -48,9 +48,9 @@ how-do-we-know-when-were-done
 documentation
 documentation-should-describe-what-you-actually-do
 documentation-workflow
-breakout-room-discussion
+discussion
 sample-project
 reflection
-coda-the-cloud-is-just-someone-elses-computer
+coda-the-cloud
 references
 additional-resources
