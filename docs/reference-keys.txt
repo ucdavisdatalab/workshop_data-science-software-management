@@ -51,5 +51,6 @@ documentation-workflow
 breakout-room-discussion
 sample-project
 reflection
-references
 coda-the-cloud-is-just-someone-elses-computer
+references
+additional-resources

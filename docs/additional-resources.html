@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4 Concrete project planning | Managing Code and Software for Applied Data Science Projects</title>
-  <meta name="description" content="4 Concrete project planning | Managing Code and Software for Applied Data Science Projects" />
+  <title>12 Additional Resources | Managing Code and Software for Applied Data Science Projects</title>
+  <meta name="description" content="12 Additional Resources | Managing Code and Software for Applied Data Science Projects" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4 Concrete project planning | Managing Code and Software for Applied Data Science Projects" />
+  <meta property="og:title" content="12 Additional Resources | Managing Code and Software for Applied Data Science Projects" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://ucdavisdatalab.github.io/workshop_data-science-software-management/" />
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="ucdavisdatalab/workshop_ds-software-management" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4 Concrete project planning | Managing Code and Software for Applied Data Science Projects" />
+  <meta name="twitter:title" content="12 Additional Resources | Managing Code and Software for Applied Data Science Projects" />
   
   
   
@@ -33,8 +33,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="approaches-to-building-code.html"/>
-<link rel="next" href="development-workflows-in-the-abstract.html"/>
+<link rel="prev" href="references.html"/>
+
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -175,101 +175,20 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="concrete-project-planning" class="section level1" number="4">
-<h1><span class="header-section-number">4</span> Concrete project planning</h1>
-<p>These are things which should be written as documentation during the project development phase. Writing this alongside your Data Management Plan (<a href="https://www.library.ucdavis.edu/service/research-data-services/plan-2/">DMP</a>) will help develop the overall design.</p>
-<p>(Project planning is all about checklists. There are no cool graphics for project planning.)</p>
-<div id="governance" class="section level2" number="4.1">
-<h2><span class="header-section-number">4.1</span> Governance</h2>
-<p>How are decisions made? Who makes them?</p>
-<p>For large, complicated projects, decision-making responsibility can be distributed by expertise (consulting statistician, system administrator), accountability (grant PI, campus security officer), and/or authority (PI, funding source, multi-site project lead).</p>
-</div>
-<div id="project-checklist" class="section level2" number="4.2">
-<h2><span class="header-section-number">4.2</span> Project checklist</h2>
-<ol style="list-style-type: decimal">
-<li>What are the <strong>deliverables</strong>? Code, analyses, figures, white papers, journal publications, etc. This constrains everything that follows.</li>
-<li>What is the <strong>timetable</strong> for the deliverables?</li>
-<li>Who are the <strong>responsible parties</strong> for each of the deliverables?</li>
-<li>What are the <strong>dependencies</strong>? For example: Data analysis requires data cleanup and validation, writing code, and testing the code.</li>
-<li>What are the <strong>implied dependencies</strong>?
-<ol style="list-style-type: decimal">
-<li>Documentation</li>
-<li>Testing</li>
-<li>Backups</li>
-<li>System administration (installation, upgrades, there's only one person who knows how to troubleshoot network errors, etc.)</li>
-<li>Training</li>
-</ol></li>
-</ol>
-</div>
-<div id="herding-your-cats" class="section level2" number="4.3">
-<h2><span class="header-section-number">4.3</span> Herding your cats</h2>
-<p><img src="img/cat-herding-software-dev.jpeg" /></p>
-<ol style="list-style-type: decimal">
-<li>By default, give everyone access to everything. If you can't do this, you have a new implied dependency: Security.</li>
-<li>Establish a common workflow for collaborating on code (e.g., "we share all code in a private Github repository")</li>
-<li>Establish a common workflow for collaborating on documents</li>
-<li>Large group? Delegate to team leads.</li>
-</ol>
-</div>
-<div id="scheduling" class="section level2" number="4.4">
-<h2><span class="header-section-number">4.4</span> Scheduling</h2>
-<p>A common conversation on development teams:</p>
-<p>Q: "How long will X take?"</p>
-<p>A: "Four weeks"</p>
-<p>X is irrelevant. From this we learn that there are two kinds of schedules:</p>
-<ol style="list-style-type: decimal">
-<li>Evidence-based schedules</li>
-<li>Lies</li>
-</ol>
-<div id="evidence-based-scheduling" class="section level3" number="4.4.1">
-<h3><span class="header-section-number">4.4.1</span> Evidence-based scheduling</h3>
-<ol style="list-style-type: decimal">
-<li>Estimate task time</li>
-<li>Start the clock</li>
-<li>Complete the task</li>
-<li>Stop the clock</li>
-<li>Assess accuracy</li>
-<li>Weight new estimates</li>
-</ol>
-<p>See more in <a href="https://www.joelonsoftware.com/2007/10/26/evidence-based-scheduling/">tthis blog post by Joel Spolsky</a></p>
-</div>
-<div id="some-comments-on-evidence-based-scheduling" class="section level3" number="4.4.2">
-<h3><span class="header-section-number">4.4.2</span> Some comments on evidence-based scheduling</h3>
-<ol style="list-style-type: decimal">
-<li>You can estimate the task time using time or "points" (i.e. the relative size of tasks)</li>
-<li>Note the missing step: You don't stop the clock when you go off-task in (3). This is deliberate; your inability to predict interruptions is one of the major sources of estimation error.</li>
-<li>You can assess the accuracy of your schedule estimates by eyeball or by using regression, depending on your commitment to the bit.</li>
-</ol>
-</div>
-<div id="an-aside-about-methodologies" class="section level3" number="4.4.3">
-<h3><span class="header-section-number">4.4.3</span> An aside about "methodologies"</h3>
-<p>There are many "methodologies" (Kanban, Agile, etc.). You can try them all, or just ignore them.</p>
-<p>You have a pile of work.</p>
-<ol style="list-style-type: decimal">
-<li>Try to organize the work in to bite-size chunks</li>
-<li>Try to keep track of who’s doing what</li>
-<li>Try to do the important stuff first</li>
-</ol>
-</div>
-<div id="an-aside-about-boiling-the-ocean" class="section level3" number="4.4.4">
-<h3><span class="header-section-number">4.4.4</span> An aside about boiling the ocean</h3>
-<p>A common mistake is trying to build everything at once. Start small and build the code in a way that scales. Don't jump to the next level of complexity until you need it.</p>
-<p>Some case and point examples:</p>
-<ol style="list-style-type: decimal">
-<li><a href="https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html">Command line tools can be faster than your hadoop cluster</a></li>
-<li><a href="https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/">Cleaning DNA sequences with R and AWK</a></li>
-</ol>
+<div id="additional-resources" class="section level1" number="12">
+<h1><span class="header-section-number">12</span> Additional Resources</h1>
+<p>Check out these related workshop materials:</p>
+<p><a href="https://ucdavisdatalab.github.io/workshop_how-to-data-documentation/">Digital project organization and documentation</a></p>
+<p><a href="https://ucdavisdatalab.github.io/workshop_keeping_data_tidy/">Keeping your data tidy</a></p>
 
-</div>
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="approaches-to-building-code.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="development-workflows-in-the-abstract.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="references.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -290,7 +209,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/ucdavisdatalab/workshop_data-science-software-management/edit/master/04_concrete-proj-planning.Rmd",
+"link": "https://github.com/ucdavisdatalab/workshop_data-science-software-management/edit/master/12_addl-resources.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -298,7 +217,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/ucdavisdatalab/workshop_data-science-software-management/blob/master/04_concrete-proj-planning.Rmd",
+"link": "https://github.com/ucdavisdatalab/workshop_data-science-software-management/blob/master/12_addl-resources.Rmd",
 "text": null
 },
 "download": null,

@@ -26,6 +26,7 @@ For large, complicated projects, decision-making responsibility can be distribut
 ## Herding your cats
 
 ![](./img/cat-herding-software-dev.jpeg)
+
 1.  By default, give everyone access to everything. If you can\'t do this, you have a new implied dependency: Security.
 2.  Establish a common workflow for collaborating on code (e.g., \"we share all code in a private Github repository\")
 3.  Establish a common workflow for collaborating on documents
@@ -76,5 +77,6 @@ You have a pile of work.
 A common mistake is trying to build everything at once. Start small and build the code in a way that scales. Don\'t jump to the next level of complexity until you need it.
 
 Some case and point examples:
+
 1.  [Command line tools can be faster than your hadoop cluster](https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html)
 2.  [Cleaning DNA sequences with R and AWK](https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/)
