@@ -25,4 +25,11 @@ output:
 
 # Overview {-}
 
-Creating a repeatable process for developing your software is an important component of reproducible research. This workshop discusses how and why we build code, possible development workflows, project management strategies, and tool selection. This workshop is designed for learners who are writing and applying code for their research projects, but have no or limited formal computer science training. After this workshop, learners should be able to describe the basic process of developing code, compare the benefits of different tools and coding workflows based on project goals and constraints, and identify appropriate strategies for managing and archiving project artifacts (including code and data). There are no specific prerequisites for this lecture/discussion-focused workshop, but it is designed for learners with prior coding experience.
+Creating a repeatable process for developing your software is an important component of reproducible research. This workshop discusses how and why we build code, possible development workflows, project management strategies, and tool selection. This workshop is designed for learners who are writing and applying code for their research projects, but have no or limited formal computer science training. 
+
+After this workshop, learners should be able to:
+-   describe the basic process of developing code;
+-   compare the benefits of different tools and coding workflows based on project goals and constraints;
+-   identify appropriate strategies for managing and archiving project artifacts (including code and data). 
+
+There are no specific prerequisites for this lecture/discussion-focused workshop, but it is designed for learners with prior coding experience.

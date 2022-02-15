@@ -72,8 +72,8 @@ To scaffold from single person to a large project, you need coordination and pla
 
 #### You want to avoid doing unnecessary work
 
-What\'s the difference between \"enough\" code organization and \"too much\" code organization? If you\'re making things that you\'ll never use, you\'re spending too much time organizing and not enough time doing. That\'s how you end up with [AbstractSingletonProxyFactoryBean](
-<https://docs.spring.io/spring-framework/docs/2.5.x/javadoc-api/org/springframework/aop/framework/AbstractSingletonProxyFactoryBean.html).
+What\'s the difference between \"enough\" code organization and \"too much\" code organization? If you\'re making things that you\'ll never use, you\'re spending too much time organizing and not enough time doing. That\'s how you end up with [AbstractSingletonProxyFactoryBean](https://docs.spring.io/spring-framework/docs/2.5.x/javadoc-api/org/springframework/aop/framework/AbstractSingletonProxyFactoryBean.html).
+
 
 ![](./img/automation_xkcd.png)
 [xkcd comic](https://xkcd.com/1319/)
