@@ -87,7 +87,6 @@ Github, because you\'re probably already using it.
 Broadly speaking, you want to be able to set up a self-contained environment that contains all of your weird dependencies, such that you can tear it down and rebuild it if something goes wrong.
 
 ![](./img/python_environment_2x.png)
-
 [xkcd comic](<https://xkcd.com/1987/)
 
 ### Python

@@ -2,7 +2,8 @@
 
 These are things which should be written as documentation during the project development phase. Writing this alongside your Data Management Plan ([DMP](https://www.library.ucdavis.edu/service/research-data-services/plan-2/)) will help develop the overall design.
 
-(Project planning is all about checklists. There are no cool graphics for project planning.)
+![](./img/concrete_proj_planning_development_process_simplyexplained.jpeg)
+[simply explained comic](https://geekandpoke.typepad.com/geekandpoke/2012/01/simply-explained-dp.html)
 
 ## Governance
 
@@ -44,6 +45,9 @@ X is irrelevant. From this we learn that there are two kinds of schedules:
 
 1.  Evidence-based schedules
 2.  Lies
+
+![](./img/phd030314s_scheduling_phd_comic.gif)
+[phd comics](https://phdcomics.com/comics/archive.php?comicid=1687)
 
 ### Evidence-based scheduling
 
