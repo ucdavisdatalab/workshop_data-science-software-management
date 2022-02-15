@@ -4,6 +4,9 @@ Domain expertise comprises two complementary forms of knowledge: Explicit knowle
 
 The field of software development (which you can think of as \"writing code\", but, like, BIGGER) also has explicit knowledge and culture of practice. You\'ve probably encountered some of the explicit knowledge in the form of tutorials, cookbooks, language specs, maybe even some comments on best practices. You probably haven\'t encountered the culture of practice.
 
+![](./img/intro_goto_xkcd.png)
+[xkcd comic](https://xkcd.com/292/)
+
 Writing code (but, like, BIGGER!) is hard. Learning some of the practices that have evolved within software development community can make it (somewhat) easier. Our goal is to transmit some of those best practices, and talk about how you can adapt them to the projects that you\'re working on right now.
 
 Things to think about as we talk:
