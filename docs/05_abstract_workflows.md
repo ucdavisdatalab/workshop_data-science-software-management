@@ -2,7 +2,7 @@
 
 ## Choosing a language is choosing an ecosystem
 
-Your workflow and available tools are depend in part on the language you\'re using, so let\'s talk about that for a minute before diving into more specifics.
+Your workflow and available tools depend in part on the language you\'re using, so let\'s talk about that for a minute before diving into more specifics.
 
 ![](./img/language_ecosystem.svg)
 
