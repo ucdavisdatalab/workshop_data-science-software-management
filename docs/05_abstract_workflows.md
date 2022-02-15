@@ -12,7 +12,7 @@ A language (and some of its libraries) is maintained by a core team, and has a s
 
 1.  **Community**. This can include forums, documentation, Q&A sites, and other evidence of enthusiastic hobby and personal use. It\'s easy to find help on how to get started. There is evidence of continuing organic support for the language ecosystem.
 2.  **Tools**. Features that make the language usable in day-to-day work, including: Code editor support, syntax highlighting, debuggers, profiling, tools for packaging and deployment, version control, testing, automated doc extraction, and integration with outside tools (web servers, databases, interchange formats like XML/JSON). Some of this will be included in Core Libraries.
-3.  **Working deployments**. You see the language being used in real-world projects. The pitfalls for deployment, performance, and scaling are well-known and documented. The community has confidence in (mostly) bug-free operation. Edge cases, errata, and know bugs are documented. There is a community of understanding around how to use the tool effectively and avoid tarpits.
+3.  **Working deployments**. You see the language being used in real-world projects. The pitfalls for deployment, performance, and scaling are well-known and documented. The community has confidence in (mostly) bug-free operation. Edge cases, errata, and known bugs are documented. There is a community of understanding around how to use the tool effectively and avoid tarpits.
 
 ### When is a language ready?
 

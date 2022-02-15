@@ -35,7 +35,7 @@ How do you know your code does what you say it does? A taxonomy of testing strat
 1.  What are the theoretically possible workflow paths?
 2.  Which ones are implemented? If you pull on this thread, you will discover that your code implements many partial workflows. This is a huge source of confusion for future users and maintainers. When you discover a partial workflow, you can clean up and/or reorganize in one of three ways:
     1.  Finish implementing the complete workflow
-    2.  Strip out the workflow entirely. This usually requires more work that the alternatives.
+    2.  Strip out the workflow entirely. This usually requires more work than the alternatives.
     3.  Explicitly stub out the un-implemented parts. The simplest way to do this is to leave comments: \"X, Y, Z cases aren\'t handled yet. When you try them, we attempt to return an informative error.\"
 3.  Which ones are tested?
 

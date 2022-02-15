@@ -58,7 +58,7 @@ X is irrelevant. From this we learn that there are two kinds of schedules:
 5.  Assess accuracy
 6.  Weight new estimates
 
-See more in [tthis blog post by Joel Spolsky](https://www.joelonsoftware.com/2007/10/26/evidence-based-scheduling/)
+See more in [this blog post by Joel Spolsky](https://www.joelonsoftware.com/2007/10/26/evidence-based-scheduling/)
 
 ### Some comments on evidence-based scheduling
 
@@ -72,7 +72,7 @@ There are many \"methodologies\" (Kanban, Agile, etc.). You can try them all, or
 
 You have a pile of work.
 
-1.  Try to organize the work in to bite-size chunks
+1.  Try to organize the work into bite-size chunks
 2.  Try to keep track of who's doing what
 3.  Try to do the important stuff first
 

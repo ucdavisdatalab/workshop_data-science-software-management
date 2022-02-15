@@ -15,7 +15,8 @@ When you have organic code development with no constraints:
 
 ### The fundamental problem of project management
 
-According to [graph theory](https://en.wikipedia.org/wiki/Complete_graph), communication channels grow as the square of the number of people: n(n -1) / 2
+In a [fully-connected network of people](https://en.wikipedia.org/wiki/Complete_graph), communication channels grow as the square of the number of people: 
+n(n -1) / 2
 
 -   2 people - 1 channel
 
