@@ -17,4 +17,4 @@ You want an easy-to-use collaborative workflow. Here are some options (not mutua
 4.  Many other wikis
 5.  Word documents in Dropbox, I guess? Sometimes you have to make compromises.
 
-For more project documentation tips including for writing a useful readME and metadata, see the workshops and tutorials under [Additional Resources](https://ucdavisdatalab.github.io/workshop_data-science-software-management/additional-resources.html).
+For more project documentation tips including how to write a useful readME and metadata, see the workshops and tutorials under [Additional Resources](https://ucdavisdatalab.github.io/workshop_data-science-software-management/additional-resources.html).
